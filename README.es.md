@@ -35,6 +35,28 @@ $ pip3 install flask && python3 server.py
 ```
 
 
+## Dashboard del gimnasio
+
+Inicia la vista previa con Flask:
+
+```bash
+pip3 install flask
+python3 server.py
+```
+
+Abre `http://localhost:3000` en el navegador. Para ejecutar las pruebas de integración:
+
+```bash
+npm install
+npm run test:e2e
+```
+
+Playwright utiliza el navegador Chromium incluido como dependencia de desarrollo y un servidor estático local en el puerto 4173 durante las pruebas.
+
+El código cliente se separa en `js/data.js` (datos), `js/dashboard.js` (cálculos y filtros), `js/components.js` (tarjetas, barras y tablas) y `js/app.js` (estado y renderizado). Los filtros de membresía afectan socios e ingresos; los filtros de día y ocupación afectan clases. El movimiento de altas y bajas permanece global.
+
+Tailwind CSS v4 y la tipografía DM Sans se cargan por CDN y necesitan conectividad para mostrarse. Sin conexión, el HTML conserva sus datos, aunque los estilos remotos y la fuente pueden no estar disponibles.
+
 ## Agradecimientos
 
 Esta y otras plantillas son utilizadas para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp). 

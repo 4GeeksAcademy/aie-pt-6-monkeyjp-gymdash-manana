@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+    color-scheme: light;
+    font-family: "DM Sans", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    --ink: #202a25;
+    --muted: #66736b;
+    --line: #dce4dc;
+    --surface: #ffffff;
+    --canvas: #f5f7f2;
+    --green: #18734f;
+    --green-soft: #e5f2e9;
+    --coral: #b94e3d;
+    --coral-soft: #f8e8e3;
+    --gold: #85630b;
+    --gold-soft: #f4efd9;
+    --teal: #176c73;
+    --teal-soft: #e0f0ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: "DM Sans", sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+button,
+select {
+    min-height: 44px;
+    font: inherit;
+}
+
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+    outline: 3px solid #b94e3d;
+    outline-offset: 3px;
+}
+
+::selection {
+    background: #cbe7d3;
+    color: #183d2c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
